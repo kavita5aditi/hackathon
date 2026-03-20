@@ -21,17 +21,16 @@ body {
     animation: gradientMove 10s ease infinite;
 }
 
-/* Gradient Animation */
 @keyframes gradientMove {
     0% {background-position: 0% 50%;}
     50% {background-position: 100% 50%;}
     100% {background-position: 0% 50%;}
 }
 
-/* Floating Highlight Words */
+/* Floating Background Text */
 .bg-text {
     position: absolute;
-    font-size: 80px;
+    font-size: 70px;
     font-weight: bold;
     opacity: 0.08;
     white-space: nowrap;
@@ -55,7 +54,6 @@ header {
 }
 
 header h1 {
-    color: #ffffff;
     text-shadow: 0 0 10px #38bdf8;
 }
 
@@ -76,7 +74,8 @@ nav a:hover {
 }
 
 .hero h2 {
-    font-size: 50px;
+    font-size: 48px;
+    line-height: 1.3;
 }
 
 .hero span {
@@ -130,6 +129,7 @@ nav a:hover {
 }
 
 .card h3 {
+    color: #38bdf8;
     margin-bottom: 10px;
 }
 
@@ -138,10 +138,17 @@ nav a:hover {
     display: flex;
     justify-content: space-around;
     padding: 50px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
-/* Contact */
+.stats div {
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+/* Form */
 .form-section {
     text-align: center;
     padding: 60px 20px;
@@ -164,10 +171,10 @@ footer {
 
 <body>
 
-<!-- Background Highlight Words -->
-<div class="bg-text">DEADLINES 📅 • EVENTS 🎉 • ALERTS 🔔</div>
-<div class="bg-text">SMART CAMPUS 🚀 • STUDENTS 🎓 • SUCCESS 📈</div>
-<div class="bg-text">NOTES 📚 • PROJECTS 💡 • COMMUNITY 🤝</div>
+<!-- Background Text -->
+<div class="bg-text">ASSIGNMENTS 📚 • ATTENDANCE 📊 • EXAMS 📝</div>
+<div class="bg-text">TIMETABLE ⏰ • NOTICE BOARD 📢 • CLUBS 🎉</div>
+<div class="bg-text">LOST & FOUND 🔍 • PROJECTS 💡 • INTERNSHIPS 🚀</div>
 
 <header>
     <h1>🎓 CampusSync</h1>
@@ -178,52 +185,74 @@ footer {
     </nav>
 </header>
 
+<!-- HERO -->
 <section class="hero">
-    <h2>🚀 Smart College Life with <span>CampusSync</span></h2>
-    <p>📅 Track everything | 📢 Stay updated | 🤝 Collaborate smarter</p>
-    <button class="btn">Get Started 🔥</button>
+    <h2>🎓 Manage Your <span>Real College Life</span> — Not Just Notes</h2>
+    <p>📅 Attendance | 📝 Assignments | 📢 Notices | 🤝 Clubs — All in One App</p>
+    <button class="btn">Login / Sign Up 🔐</button>
 </section>
 
+<!-- FEATURES -->
 <section id="features" class="features">
 
     <div class="card">
-        <h3>📅 Deadlines</h3>
-        <p>Auto reminders for assignments ⏰</p>
+        <h3>📅 Smart Timetable</h3>
+        <p>Auto-generated daily schedule based on your classes</p>
     </div>
 
     <div class="card">
-        <h3>📢 Updates</h3>
-        <p>Centralized announcements 📲</p>
+        <h3>📝 Assignment Tracker</h3>
+        <p>Submit on time with reminders before deadlines ⏰</p>
     </div>
 
     <div class="card">
-        <h3>🤝 Collaboration</h3>
-        <p>Team up with classmates 💡</p>
+        <h3>📢 College Notices</h3>
+        <p>No more WhatsApp confusion — all updates in one place</p>
     </div>
 
     <div class="card">
-        <h3>📊 Dashboard</h3>
-        <p>Track performance 📈</p>
+        <h3>📊 Attendance Monitor</h3>
+        <p>Track % and avoid shortage before exams 🚨</p>
     </div>
 
     <div class="card">
-        <h3>🔔 Alerts</h3>
-        <p>Never miss anything 🚨</p>
+        <h3>🤝 Clubs & Events</h3>
+        <p>Join hackathons, fests, and workshops easily 🎉</p>
     </div>
 
     <div class="card">
-        <h3>📚 Resources</h3>
-        <p>All study material in one place</p>
+        <h3>🔍 Lost & Found</h3>
+        <p>Report or find lost items inside campus 🧳</p>
     </div>
 
 </section>
 
+<!-- USER TYPES -->
+<section class="features">
+    <div class="card">
+        <h3>👨‍🎓 For Students</h3>
+        <p>Stay organized and stress-free</p>
+    </div>
+
+    <div class="card">
+        <h3>👩‍🏫 For Teachers</h3>
+        <p>Post assignments and track progress</p>
+    </div>
+
+    <div class="card">
+        <h3>🏫 For Colleges</h3>
+        <p>Manage everything in one digital platform</p>
+    </div>
+</section>
+
+<!-- STATS -->
 <section class="stats">
-    <div>🎯 90% Less Missed Deadlines</div>
-    <div>⚡ 3x Faster Updates</div>
-    <div>📈 Better Results</div>
+    <div>🎯 80% Students Miss Deadlines — We Fix That</div>
+    <div>📉 Reduce Attendance Shortage Risk</div>
+    <div>⚡ Save 2+ Hours Daily</div>
 </section>
 
+<!-- CONTACT -->
 <section id="contact" class="form-section">
     <h2>📬 Join Now</h2>
     <form>
